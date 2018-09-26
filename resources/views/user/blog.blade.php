@@ -130,7 +130,7 @@
                         <div class="widget-body">
                             <ul class="tags">
                                 @foreach($tags as $tag)
-                                    <li><a href="#">{{$tag->name}}</a></li>
+                                    <li><a href="{{route('tag',$tag->id)}}">{{$tag->name}}</a></li>
                                 @endforeach
                             </ul>
                         </div>
